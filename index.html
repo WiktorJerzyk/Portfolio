@@ -9,29 +9,54 @@
 </head>
 <body>
   <header>
+    <div class="content">
     <div id="icon">
         <a href="#start"><span class="cosmeticMark">-</span>
           <span id="WJ">WJ</span>
             <span class="cosmeticMark">-</span></a>
     </div>
     <nav>
-      <ul>
+      <ul class="pl">
         <li><a href="#about">O mnie</a></li>
         <li><a href="#certificates">Certyfikaty</a></li>
         <li><a href="#projects">Projekty</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
+
+      <ul class="eng">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">My projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
     </nav>
     <div id="kontrolki">
-      <div>PL</div>
-      <div>ENG </div>
-      <div>toggle</div>
+      <div class="clickable" >PL</div>
+      <div class="cosmeticMark2">  |  </div>
+      <div class="clickable">ENG </div>
 
     </div>
+
+    
+  </div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
   </header>
   <main>
-    <section id="#start">
-      <article>
+    <section id="start">
+      <article class="pl">
+        <h1>Nazywam się Wiktor</h1>
+        <h5>Z zawodu technik informatyk</h5>
+        <span>Specjalizuję się w sieciach komputerowych i stale rozwijam się w projektowaniu stron internetowych i programowaniu.
+          Moim celem jest integracja wiedzy z różnych dziedzin w spójny i harmonijny sposób, aby skutecznie realizować złożone i wymagające projekty.
+        </span>
+        <div class="btn">Więcej</div>
+        <div class="btn">Kontakt</div>
+      </article>
+
+      <article class="eng">
         <h1>Nazywam się Wiktor</h1>
         <h5>Z zawodu technik informatyk</h5>
         <span>Specjalizuję się w sieciach komputerowych i stale rozwijam się w projektowaniu stron internetowych i programowaniu.
@@ -41,25 +66,60 @@
         <div class="btn">Kontakt</div>
       </article>
     </section>
-    <section id="#about">
-      <h3>O mnie</h3>
+    <section id="about">
+      <article class="pl">
+        <h3>O mnie</h3>
       <h1>Kreatywność, Dyscyplina, Skrupulatność</h1>
       <span>Jestem ambitnym młodym umysłem, mam doswiadczenie w hardware'owej odsłonie komputera i innych urządzeń sieciowych.
         Obecnie swoją dalszą ścieżkę rozwoju wiąże przede wszystkim z programowaniem i tworzeniem witryn internetowych.
         Miałem przyjemność tworzyć kilka mniejszych projektów, które pozwoliły mi zobaczyć jak to jest tworzyć programy nie związane ze szkołą.
         Korzystam z okazji i dzięki mojej szkole zdobywam certyfikaty, które potwierdzają moje zaangażowanie i biegłość w dziedzinie informatyki.
       </span>
+      </article>
+
+      <article clas="eng">
+        <h3>O mnie</h3>
+      <h1>Kreatywność, Dyscyplina, Skrupulatność</h1>
+      <span>Jestem ambitnym młodym umysłem, mam doswiadczenie w hardware'owej odsłonie komputera i innych urządzeń sieciowych.
+        Obecnie swoją dalszą ścieżkę rozwoju wiąże przede wszystkim z programowaniem i tworzeniem witryn internetowych.
+        Miałem przyjemność tworzyć kilka mniejszych projektów, które pozwoliły mi zobaczyć jak to jest tworzyć programy nie związane ze szkołą.
+        Korzystam z okazji i dzięki mojej szkole zdobywam certyfikaty, które potwierdzają moje zaangażowanie i biegłość w dziedzinie informatyki.
+      </span>
+      </article>
+      
     </section>
-    <section id="#certificates">
-      <h1>Kwalifikacje i Certyfikaty</h1>
+    <section id="certificates">
+      <article class="pl">
+        <h1>Kwalifikacje i Certyfikaty</h1>
+      </article>
+
+      <article class="eng">
+        <h1>Kwalifikacje i Certyfikaty</h1>
+      </article>
+      
     </section>
-    <section id="#projects">
-      <h1>Projekty, które właśnie tworzę</h1>
+    <section id="projects">
+      <article class="pl">
+        <h1>Projekty, które właśnie tworzę</h1>
+      </article>
+      <article class="eng">
+        <h1>Projekty, które właśnie tworzę</h1>
+      </article>
     </section>
-    <section id="#contact">
-      <h1>Kontakt</h1>
+    <section id="contact">
+      <article class="pl">
+        <h1>Kontakt</h1>
+      </article>
+
+      <article class="eng">
+        <h1>Kontakt</h1>
+      </article>
+      
     </section>
 
   </main>
 </body>
+<script src="skrypt.js">
+
+</script>
 </html>
