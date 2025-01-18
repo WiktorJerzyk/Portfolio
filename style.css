@@ -1,10 +1,15 @@
 body{
-    background-color:#333533;
+    background-color:#393E46;
+    color:#eeeeee;
+    margin:0 auto;
 }
 /*header styling */
 header{
     display:flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: #222831;
+    box-shadow:1px 1px#f5cb5c;
 }
 nav{
     width: 100%;
@@ -20,19 +25,49 @@ nav li{
 nav a{
     text-decoration: none;
     color:#DDE6ED;
-    font-size:1.2em;
+    font-size:1.3em;
     padding-bottom:5%;
     margin:1em;
+    white-space: nowrap;
 }
 nav a:hover{
 
     color:#eeeeee;
     border-bottom:3px solid #f5cb5c;
+    transition:0.1s;
 
 }
-#icon{
-    width:10vw;
-}   
 #kontrolki{
-    width:10vw;
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+    color: #eeeeee;
 }
+#icon{
+    color: #eeeeee;
+    display: flex;
+    width:100%;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;;
+   
+
+
+} 
+#icon a{
+    text-decoration: none;
+    color:#DDE6ED;
+    font-size:2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0.5px #f5cb5c;
+    font-weight: 600;
+    
+}
+#icon a:hover{
+    text-shadow:1px 1px #f5cb5c;
+    transition: 0.5s;
+}
+#icon .cosmeticMark{
+    color:#f5cb5c;
+}
+
