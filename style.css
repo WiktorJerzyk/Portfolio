@@ -14,6 +14,9 @@ body{
 .kolor{
     color:#f5cb5c;
 }
+.mobile{
+    display:none;
+}
 /*header styling */
 header{
     position: sticky;
@@ -326,9 +329,7 @@ section h5{
     }
 
 }
-.mobile{
-    display:none;
-}
+
 @media screen and (max-width:1100px) {
     section{
         flex-wrap:wrap;
