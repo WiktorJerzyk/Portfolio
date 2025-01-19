@@ -8,35 +8,36 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header>
+  <header class="pccont">
     <div class="content">
     <div id="icon">
         <a href="#start"><span class="cosmeticMark">-</span>
           <span id="WJ">WJ</span>
             <span class="cosmeticMark">-</span></a>
     </div>
-    <nav>
-      <ul class="pl">
+    <nav class="pl">
+      <ul>
         <li><a href="#about">O mnie</a></li>
         <li><a href="#certificates">Certyfikaty</a></li>
         <li><a href="#projects">Projekty</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
-
-      <ul class="eng">
+    </nav>
+    <nav class="eng">
+      <ul>
         <li><a href="#about">About me</a></li>
         <li><a href="#certificates">Certificates</a></li>
         <li><a href="#projects">My projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
     </nav>
     <div id="kontrolki">
-      <div class="clickable" >PL</div>
+      <div class="clickable" onclick="chgLang('pl')">PL</div>
       <div class="cosmeticMark2">  |  </div>
-      <div class="clickable">ENG </div>
+      <div class="clickable" onclick="chgLang('eng')">ENG </div>
 
     </div>
+    
 
     
   </div>
@@ -44,82 +45,228 @@
     <div class="progress-bar" id="myBar"></div>
   </div>
   </header>
+  <header class="mobile">
+    <div id="kontrolki">
+      <div class="clickable" onclick="chgLang('pl')">PL</div>
+      <div class="cosmeticMark2">  |  </div>
+      <div class="clickable" onclick="chgLang('eng')">ENG </div>
+
+    </div>
+
+    <nav class="eng">
+      <ul>
+          <button class="dropBtn">Menu</button>
+          <div class="dropContent">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#projects">My projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+      </ul>
+      </nav>
+      <nav class="pl">
+        <ul>
+            <button class="dropBtn">Menu</button>
+            <div class="dropContent">
+              <li><a href="#about">O mnie</a></li>
+              <li><a href="#certificates">Certyfikaty</a></li>
+              <li><a href="#projects">Projekty</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </div>
+        </ul>
+        </nav>
+
+  </header>
+
   <main>
     <section id="start">
       <article class="pl">
-        <h1>Nazywam się Wiktor</h1>
-        <h5>Z zawodu technik informatyk</h5>
-        <span>Specjalizuję się w sieciach komputerowych i stale rozwijam się w projektowaniu stron internetowych i programowaniu.
+        <h1>Mam na imię <span class="kolor">Wiktor</span></h1>
+        <h5>Z zawodu (niedługo) <span class="kolor">technik informatyk</span></h5>
+        <div class="text">Specjalizuję się w sieciach komputerowych i stale rozwijam się w projektowaniu stron internetowych i programowaniu.
           Moim celem jest integracja wiedzy z różnych dziedzin w spójny i harmonijny sposób, aby skutecznie realizować złożone i wymagające projekty.
-        </span>
-        <div class="btn">Więcej</div>
-        <div class="btn">Kontakt</div>
+        </div>
+        <div class="btnContainer">
+          <a href="#about">Więcej</a>
+          <a href="#contact">Kontakt</a>
+      </div>
       </article>
 
       <article class="eng">
-        <h1>Nazywam się Wiktor</h1>
-        <h5>Z zawodu technik informatyk</h5>
-        <span>Specjalizuję się w sieciach komputerowych i stale rozwijam się w projektowaniu stron internetowych i programowaniu.
-          Moim celem jest integracja wiedzy z różnych dziedzin w spójny i harmonijny sposób, aby skutecznie realizować złożone i wymagające projekty.
-        </span>
-        <div class="btn">Więcej</div>
-        <div class="btn">Kontakt</div>
+        <h1>My name is <span class="kolor">Wiktor</span></h1>
+        <h5>I will soon be a qualified  <span class="kolor">IT technician</span></h5>
+        <div class="text">I specialize in computer networks and I am constantly developing in web design and programming.
+
+          My goal is to integrate knowledge from different fields in a coherent and harmonious way to effectively implement complex and demanding projects.
+        </div>
+          <div class="btnContainer">
+            <a href="#about">More</a>
+            <a href="#contact">Contact</a>  
+      </div>
       </article>
+      
+      <article class="zdjecia">
+        <img src="img/zdjDoCV.jpg" id="ja1" class="zdjme">
+        <img src="img/376830757_321928680308444_6025092531475814180_n.jpg" id="ja2" class="zdjme">
+      </article>
+        
+    
     </section>
     <section id="about">
       <article class="pl">
         <h3>O mnie</h3>
       <h1>Kreatywność, Dyscyplina, Skrupulatność</h1>
-      <span>Jestem ambitnym młodym umysłem, mam doswiadczenie w hardware'owej odsłonie komputera i innych urządzeń sieciowych.
+      <div class="text">Jestem ambitnym młodym umysłem, mam doswiadczenie w hardware'owej odsłonie komputera i innych urządzeń sieciowych.
         Obecnie swoją dalszą ścieżkę rozwoju wiąże przede wszystkim z programowaniem i tworzeniem witryn internetowych.
         Miałem przyjemność tworzyć kilka mniejszych projektów, które pozwoliły mi zobaczyć jak to jest tworzyć programy nie związane ze szkołą.
         Korzystam z okazji i dzięki mojej szkole zdobywam certyfikaty, które potwierdzają moje zaangażowanie i biegłość w dziedzinie informatyki.
-      </span>
-      </article>
-
-      <article clas="eng">
-        <h3>O mnie</h3>
-      <h1>Kreatywność, Dyscyplina, Skrupulatność</h1>
-      <span>Jestem ambitnym młodym umysłem, mam doswiadczenie w hardware'owej odsłonie komputera i innych urządzeń sieciowych.
-        Obecnie swoją dalszą ścieżkę rozwoju wiąże przede wszystkim z programowaniem i tworzeniem witryn internetowych.
-        Miałem przyjemność tworzyć kilka mniejszych projektów, które pozwoliły mi zobaczyć jak to jest tworzyć programy nie związane ze szkołą.
-        Korzystam z okazji i dzięki mojej szkole zdobywam certyfikaty, które potwierdzają moje zaangażowanie i biegłość w dziedzinie informatyki.
-      </span>
-      </article>
-      
-    </section>
-    <section id="certificates">
-      <article class="pl">
-        <h1>Kwalifikacje i Certyfikaty</h1>
+      </div>
       </article>
 
       <article class="eng">
-        <h1>Kwalifikacje i Certyfikaty</h1>
+        <h3>About me</h3>
+      <h1>Creativity, Discipline, Meticulousness</h1>
+      <div class="text">I am an ambitious young mind, I have experience in the hardware side of computers and other network devices.
+
+        Currently, my further development path is primarily associated with programming and creating websites.
+        
+        I had the pleasure of creating several smaller projects that allowed me to see what it's like to create programs unrelated to school.
+        
+        I take the opportunity and thanks to my school I am gaining certificates that confirm my commitment and proficiency in the field of computer science.
+      </div>
+      </article>
+
+      <article class="zdjecia">
+        <img src="img/workspace-1280538_1280.jpg" id="vibe">
       </article>
       
     </section>
-    <section id="projects">
+    <section id="certificates" class="onebox">
+      <article class="pl">
+        <h1>Kwalifikacje i Certyfikaty</h1>
+        
+
+      </article>
+
+      <article class="eng">
+        <h1>Qualifications and certificates</h1>
+      </article>
+
+      <div class="achievments">
+        <div>
+          <img src="img/ITe-1.png">
+        </div>
+
+        <div>
+          <img src="img/CCNAv1-1.png">
+        </div>
+
+        <div class="pl">
+            Już wkrótce CCNA2: Switching, Routing, and Wireless Essentials
+        </div>
+        <div class="eng">
+          Coming soon CCNA2: Switching, Routing, and Wireless Essentials
+      </div>
+
+      </div>
+      
+    </section>
+    <section id="projects" class="onebox">
       <article class="pl">
         <h1>Projekty, które właśnie tworzę</h1>
       </article>
       <article class="eng">
-        <h1>Projekty, które właśnie tworzę</h1>
+        <h1>Projects that I am working on</h1>
+      </article>
+
+      <article>
+        <div class="achievments">
+          <div>
+            <a href="https://wiktorjerzyk.github.io/matura/" target="_blank"><img src="img/maturaobrazek.jpg"></a>
+          </div>
+          <div>
+            <a href="https://wiktorjerzyk.github.io/INF03/" target="_blank"><img src="img/INF03Obrazek.jpg"></a>
+          </div>
+        </div>
       </article>
     </section>
-    <section id="contact">
+
+
+    <section id="contact" class="onebox">
       <article class="pl">
         <h1>Kontakt</h1>
+
+        <div class="dane">
+          <div>Telefon: 609 102 416</div>
+         <div> E-mail: wiktor.jerzykiewicz@uczen.zsk.poznan.pl</div>
+          <div>E-mail. wiktor.jerzykiewicz06@gmail.com</div>
+          <div><h2><span class="kolor">Technologie</span>, które znam:</h2></div>
+          <div class="zbior">
+            <div class="minikonki">
+              <div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" class="css-xtbb2s">
+                  <div class="css-mr3j8u">HTML</div>
+              </div>
+          </div>
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" class="css-xtbb2s"><div class="css-mr3j8u">CSS</div></div></div>
+            
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="css-xtbb2s"><div class="css-mr3j8u">JavaScript</div></div></div>
+
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://cdn.iconscout.com/icon/free/png-512/free-csharp-1-1175241.png?f=webp&w=256" alt="C#" class="css-xtbb2s"><div class="css-mr3j8u">C#</div></div></div>
+            
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="css-xtbb2s"><div class="css-mr3j8u">Python</div></div></div>
+
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://cdn.iconscout.com/icon/free/png-512/free-c-4-226082.png?f=webp&w=256" alt="C++" class="css-xtbb2s"><div class="css-mr3j8u">C++</div></div></div>
+            
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://cdn.iconscout.com/icon/free/png-512/free-php-99-1175127.png?f=webp&w=256" alt="PHP" class="css-xtbb2s"><div class="css-mr3j8u">PHP</div></div></div>
+            
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL" class="css-xtbb2s"><div class="css-mr3j8u">MySQL</div></div></div>
+    </div>
+        </div>
+
+        
       </article>
 
       <article class="eng">
-        <h1>Kontakt</h1>
+        <h1>Contact</h1>
+
+        <div class="dane">
+          <div>Phone: +48 609 102 416</div>
+         <div> E-mail: wiktor.jerzykiewicz@uczen.zsk.poznan.pl</div>
+          <div>E-mail. wiktor.jerzykiewicz06@gmail.com</div>
+          <div><h3>I know those <span class="kolor">technologies</span>:</h3></div>
+          <div class="zbior">
+            <div class="minikonki">
+              <div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" class="css-xtbb2s">
+                  <div class="css-mr3j8u">HTML</div>
+              </div>
+          </div>
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" class="css-xtbb2s"><div class="css-mr3j8u">CSS</div></div></div>
+            
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="css-xtbb2s"><div class="css-mr3j8u">JavaScript</div></div></div>
+
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://cdn.iconscout.com/icon/free/png-512/free-csharp-1-1175241.png?f=webp&w=256" alt="C#" class="css-xtbb2s"><div class="css-mr3j8u">C#</div></div></div>
+            
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" class="css-xtbb2s"><div class="css-mr3j8u">Python</div></div></div>
+
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://cdn.iconscout.com/icon/free/png-512/free-c-4-226082.png?f=webp&w=256" alt="C++" class="css-xtbb2s"><div class="css-mr3j8u">C++</div></div></div>
+            
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://cdn.iconscout.com/icon/free/png-512/free-php-99-1175127.png?f=webp&w=256" alt="PHP" class="css-xtbb2s"><div class="css-mr3j8u">PHP</div></div></div>
+            
+            <div class="minikonki"><div class="tech css-1jjqhp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL" class="css-xtbb2s"><div class="css-mr3j8u">MySQL</div></div></div>
+    </div>
+        </div>
       </article>
       
     </section>
 
   </main>
+  
 </body>
-<script src="skrypt.js">
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loading-bar">
+      <div class="loading-progress" id="loadingProgress"></div>
+  </div>
+</div>
+<script src="skrypt.js" defer></script>
 
-</script>
 </html>

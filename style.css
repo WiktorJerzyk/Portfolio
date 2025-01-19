@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
 }
 body{
     background-color:#393E46;
@@ -9,12 +10,16 @@ body{
 .clickable{
     cursor: pointer;
 }
+.kolor{
+    color:#f5cb5c;
+}
 /*header styling */
 header{
     position: sticky;
   top: 0;
   overflow: hidden;
   opacity:100%;
+  z-index: 99;
 }
 header .content{
     display:flex;
@@ -113,8 +118,8 @@ nav a:hover{
 /*Site depth*/
 .progress-container {
     width: 100%;
-    height: 8px;
-    background: #ccc;
+    height: 4px;
+    background: #DDE6ED;
   }
   
   /* The progress bar (scroll indicator) */
@@ -127,6 +132,278 @@ nav a:hover{
 .eng{
     display:none;
 }
+.blur {
+    filter: blur(30px);
+    pointer-events: none;
+}
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Pasek ładowania */
+.loading-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    filter: blur(0px) !important;
+}
+
+.loading-progress {
+    height: 100%;
+    background-color: #f5cb5c;
+    width: 0;
+    transition: width 2s ease-in-out;
+    filter: blur(0px) !important;
+}
 /*Main styling*/
+#start{
+    padding-bottom:100px;
+    
+}
+#about, #projects{
+    background-color:#ddd; 
+    color:#222831 ;
+    height:auto;
+}
+article .zdjme{
+    height:320px;
+    border-radius: 30%;
+    padding:5px;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #f5cb5c;
+}
+#ja1{
+    top:130px;
+    left:70px;
+}
+#ja1:hover{
+    height:352px;
+    z-index:2;
+}
+#ja2{
+    top:30px;
+    left:-30px;
+}
+#ja2:hover{
+    height:352px;
+    z-index:2;
+}
+.zdjecia{
+    display:flex;
+    padding:3em;
+    justify-content: center;
+}
+#vibe{
+    position:relative;
+    height:500px;
+}
 section{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+section{
+    display:flex;
+    padding:20px;
+}
+.onebox{
+    flex-wrap:wrap;
+}
+section article{
+    width:50%;
+}
+.onebox article{
+    width:100%;
+}
+section .text{
+    font-size:1.2em;
+    line-height: 2;
+    text-align:justify; 
+    margin-bottom: 15px; 
+    max-width:800px;
+    margin: 0 auto; 
+}
+.btnContainer{
+    display:flex;
+    width:100%;
+    justify-content:left;
+    padding-top:2em;
+}
+.btnContainer a{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid transparent;
+    margin-right: 1rem;
+    background-color: #f5cb5c;
+}
+.btnContainer a:first-of-type{
+    background-color: #393E46;
+    border: 2px solid #f5cb5c ;
+    color:#DDE6ED;
+}
+section h1{
+    width:100%;
+    font-size: 3em;
+    margin-bottom:2px;
+    text-align: center;
+}
+section h5{
+    width:100%;
+    font-size:1.5em;
+    text-align: center;
+}
+/*Certificates styling*/
+.achievments{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.achievments img{
+    width:100%;
+    
+}
+.achievments div{
+    
+    margin:15px;
+    width:33%;
+}
+.dane div{
+    margin:15px;
+}
+.zbior{
+    display:flex;
+
+}
+.zbior img{
+    height:50px;
+}
+/*Smaller screens handling*/
+@media screen and (max-width:900px) {
+    article .zdjme{
+        height:200px;
+        border-radius: 30%;
+        padding:5px;
+        position: relative;
+        z-index: 1;
+        border: 3px solid #f5cb5c;
+    }
+    #ja1{
+        top:130px;
+        left:70px;
+    }
+    #ja1:hover{
+        height:270px;
+        z-index:2;
+    }
+    #ja2{
+        top:30px;
+        left:-30px;
+    }
+    #ja2:hover{
+        height:270px;
+        z-index:2;
+    }
+    .zdjecia{
+        display:flex;
+        padding:3em;
+        justify-content: center;
+    }
+    #vibe{
+        display:none;
+    }
+.mobile{
+    display:none;
+}
+@media screen and (max-width:1100px) {
+    section{
+        flex-wrap:wrap;
+    }
+    section article{
+        width:100%;
+    }
+    .btnContainer{
+        display:flex;
+        width:100%;
+        justify-content:center;
+        padding-top:2em;
+    }
+    .zbior{
+        flex-wrap:wrap;
+    }
+    .pccont{
+        display:none;
+    }
+    /*Phone navigation*/
+    .mobile{
+        display:flex;
+       
+        
+    }
+    #kontrolki{
+        justify-content: flex-start;
+        
+    }
+
+   nav button{
+    background-color: #222831;
+   }
+    nav ul{
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+        font-size: 1.5em;
+        background-color: #222831;
+        position: relative;
+        display: block;
+    }
+    nav li{
+        display: inline;
+        float:none;
+    }
+    nav a{
+        display:block;
+        padding:8px;
+        text-decoration:none;
+        text-align:center;
+        padding: 14px 16px;
+        color:#f5cb5c;
+        font-weight: 500;
+        
+    }
+    nav a:hover{
+
+        color:rgb(255, 255, 255);
+    }
+    .dropContent{
+        display:none;
+        font-size: 0.5em;
+    }
+    .dropBtn{
+        display:block;
+        color: white;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+        width:100%;
+    }
+    nav:hover  .dropContent{
+        display:block;
+
+    }
+
+      
+      
 }
