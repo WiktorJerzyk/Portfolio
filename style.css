@@ -6,6 +6,7 @@ body{
     background-color:#393E46;
     color:#eeeeee;
     margin:0 auto;
+    box-sizing: border-box;
 }
 .clickable{
     cursor: pointer;
@@ -292,7 +293,7 @@ section h5{
 /*Smaller screens handling*/
 @media screen and (max-width:900px) {
     article .zdjme{
-        height:200px;
+        height:150px;
         border-radius: 30%;
         padding:5px;
         position: relative;
@@ -301,18 +302,18 @@ section h5{
     }
     #ja1{
         top:130px;
-        left:70px;
+        left:50px;
     }
     #ja1:hover{
-        height:270px;
+        height:170px;
         z-index:2;
     }
     #ja2{
         top:30px;
-        left:-30px;
+        left:-50px;
     }
     #ja2:hover{
-        height:270px;
+        height:170px;
         z-index:2;
     }
     .zdjecia{
@@ -323,6 +324,8 @@ section h5{
     #vibe{
         display:none;
     }
+
+}
 .mobile{
     display:none;
 }
@@ -406,4 +409,17 @@ section h5{
 
       
       
+}
+
+.bigPicture{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
