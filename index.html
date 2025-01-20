@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header class="pccont">
@@ -154,11 +154,11 @@
 
       <div class="achievments">
         <div>
-          <img src="img/ITe-1.png">
+          <img src="img/ITe-1.png" onclick="showPic('img/ITe-1.png','ite1')" id="ite1">
         </div>
 
         <div>
-          <img src="img/CCNAv1-1.png">
+          <img src="img/CCNAv1-1.png" onclick="showPic('img/CCNAv1-1.png','ccna1')">
         </div>
 
         <div class="pl">
@@ -266,6 +266,12 @@
   <div class="loading-bar">
       <div class="loading-progress" id="loadingProgress"></div>
   </div>
+</div>
+<div id="myModal" class="modal">
+
+  <span class="close" id="closerPic">&times;</span>
+
+  <img class="modal-content" id="img01">
 </div>
 <script src="skrypt.js" defer></script>
 

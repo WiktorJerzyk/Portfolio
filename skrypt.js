@@ -56,3 +56,20 @@ function chgLang(language) {
 }
 
 
+var modal = document.getElementById("myModal");
+function showPic(a,b){
+  
+  var modalImg = document.getElementById("img01");
+  modal.style.display = "block";
+  modalImg.src = a;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementById("closerPic");
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
