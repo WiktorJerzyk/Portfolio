@@ -1,0 +1,521 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color:#393E46;
+    color:#eeeeee;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+img:hover{
+    cursor:pointer;
+}
+.clickable{
+    cursor: pointer;
+}
+.kolor{
+    color:#f5cb5c;
+}
+.mobile{
+    display:none;
+}
+/*header styling */
+header{
+    position: sticky;
+  top: 0;
+  overflow: hidden;
+  opacity:100%;
+  z-index: 99;
+}
+header .content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222831;
+    box-shadow:1px 1px#f5cb5c;
+
+    
+}
+nav{
+    width: 100%;
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+    list-style-type:none;
+}
+nav li{
+    display:block;
+}
+nav a{
+    text-decoration: none;
+    color:#DDE6ED;
+    font-size:1.3em;
+    padding-bottom:5%;
+    margin:1em;
+    white-space: nowrap;
+}
+nav a:hover{
+
+    color:#eeeeee;
+    border-bottom:3px solid #f5cb5c;
+    transition:0.1s;
+
+}
+#kontrolki{
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+    color: #eeeeee;
+    margin-right:15px;
+}
+#kontrolki .clickable:hover{
+    color: #ffffff;
+}
+.cosmeticMark2{
+    margin-left:5px;
+    margin-right:5px;
+}
+#icon{
+    color: #eeeeee;
+    display: flex;
+    width:100%;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;;
+   
+} 
+#icon a{
+    text-decoration: none;
+    color:#DDE6ED;
+    font-size:2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0.5px #f5cb5c;
+    font-weight: 600;
+    
+}
+#icon a:hover{
+    text-shadow:1px 1px #f5cb5c;
+    transition: 0.5s;
+}
+#icon .cosmeticMark{
+    color:#f5cb5c;
+}
+/*Custom scroll*/
+::-webkit-scrollbar {
+    width: 5px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2b3f57; 
+    border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2b3f5794;
+}
+::-webkit-scrollbar-thumb:hover{
+    width: 8px; 
+}
+/*Site depth*/
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: #DDE6ED;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #f5cb5c;
+    width: 0%;
+  }
+/*language handling*/
+.eng{
+    display:none;
+}
+.blur {
+    filter: blur(30px);
+    pointer-events: none;
+}
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Pasek ładowania */
+.loading-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    filter: blur(0px) !important;
+}
+
+.loading-progress {
+    height: 100%;
+    background-color: #f5cb5c;
+    width: 0;
+    transition: width 2s ease-in-out;
+    filter: blur(0px) !important;
+}
+/*Main styling*/
+#start{
+    padding-bottom:100px;
+    
+}
+#about, #projects{
+    background-color:#ddd; 
+    color:#222831 ;
+    height:auto;
+}
+article .zdjme{
+    height:320px;
+    border-radius: 30%;
+    padding:5px;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #f5cb5c;
+}
+#ja1{
+    top:130px;
+    left:70px;
+}
+#ja1:hover{
+    height:352px;
+    z-index:2;
+}
+#ja2{
+    top:30px;
+    left:-30px;
+}
+#ja2:hover{
+    height:352px;
+    z-index:2;
+}
+.zdjecia{
+    display:flex;
+    padding:3em;
+    justify-content: center;
+}
+#vibe{
+    position:relative;
+    height:500px;
+}
+section{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+section{
+    display:flex;
+    padding:20px;
+}
+.onebox{
+    flex-wrap:wrap;
+}
+section article{
+    width:50%;
+}
+.onebox article{
+    width:100%;
+}
+section .text{
+    font-size:1.2em;
+    line-height: 2;
+    text-align:justify; 
+    margin-bottom: 15px; 
+    max-width:800px;
+    margin: 0 auto; 
+}
+.btnContainer{
+    display:flex;
+    width:100%;
+    justify-content:left;
+    padding-top:2em;
+}
+.btnContainer a{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid transparent;
+    margin-right: 1rem;
+    background-color: #f5cb5c;
+}
+.btnContainer a:first-of-type{
+    background-color: #393E46;
+    border: 2px solid #f5cb5c ;
+    color:#DDE6ED;
+}
+section h1{
+    width:100%;
+    font-size: 3em;
+    margin-bottom:2px;
+    text-align: center;
+}
+section h5{
+    width:100%;
+    font-size:1.5em;
+    text-align: center;
+}
+/*Certificates styling*/
+.achievments{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.achievments img{
+    width:100%;
+    
+}
+.achievments div{
+    
+    margin:15px;
+    width:33%;
+}
+.dane div{
+    margin:15px;
+}
+.zbior{
+    display:flex;
+
+}
+.zbior img{
+    height:50px;
+}
+/*Smaller screens handling*/
+@media only screen and (max-width:1500px){
+    #vibe{
+        height:300px;
+    }
+}
+@media screen and (max-width:900px) {
+    article .zdjme{
+        height:150px;
+        border-radius: 30%;
+        padding:5px;
+        position: relative;
+        z-index: 1;
+        border: 3px solid #f5cb5c;
+    }
+    #ja1{
+        top:130px;
+        left:50px;
+    }
+    #ja1:hover{
+        height:170px;
+        z-index:2;
+    }
+    #ja2{
+        top:30px;
+        left:-50px;
+    }
+    #ja2:hover{
+        height:170px;
+        z-index:2;
+    }
+    .zdjecia{
+        display:flex;
+        padding:3em;
+        justify-content: center;
+    }
+    #vibe{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    section{
+        flex-wrap:wrap;
+    }
+    section article{
+        width:100%;
+    }
+    .btnContainer{
+        display:flex;
+        width:100%;
+        justify-content:center;
+        padding-top:2em;
+    }
+    .zbior{
+        flex-wrap:wrap;
+    }
+    .pccont{
+        display:none;
+    }
+    /*Phone navigation*/
+    .mobile{
+        display:flex;
+       
+        
+    }
+    #kontrolki{
+        justify-content: flex-start;
+        
+    }
+
+   nav button{
+    background-color: #222831;
+   }
+    nav ul{
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+        font-size: 1.5em;
+        background-color: #222831;
+        position: relative;
+        display: block;
+    }
+    nav li{
+        display: inline;
+        float:none;
+    }
+    nav a{
+        display:block;
+        padding:8px;
+        text-decoration:none;
+        text-align:center;
+        padding: 14px 16px;
+        color:#f5cb5c;
+        font-weight: 500;
+        
+    }
+    nav a:hover{
+
+        color:rgb(255, 255, 255);
+    }
+    .dropContent{
+        display:none;
+        font-size: 0.5em;
+    }
+    .dropBtn{
+        display:block;
+        color: white;
+        font-size: 1em;
+        border: none;
+        cursor: pointer;
+        width:100%;
+    }
+    nav:hover  .dropContent{
+        display:block;
+
+    }
+
+      
+      
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    align-items: center;
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+    .zdjecia{
+        display:flex;
+        padding:3em;
+        justify-content: left;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .modal-content {
+      width: 100%;
+    }
+    .zdjecia{
+        display:none;
+    }
+  }
+  @media only screen and (min-width:1700px){
+    .btnContainer{
+        justify-content: center;
+    }
+  }
+ 
